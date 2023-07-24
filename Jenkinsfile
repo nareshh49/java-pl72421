@@ -4,17 +4,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git url: 'https://github.com/nareshh49/java-pl7242159.git'
+                  git url: 'https://github.com/nareshh49/java-pipeline12.git'
                 sh 'ls -lart'
-                sh 'javac sumoftwonumbers.java'
+                sh 'javac hello.java'
             }
         }
         stage('Run') {
             steps {
                 sh 'ls -lsrt'
-                sh 'java Addition'
+                sh 'java myhello'
             }
         }
     }
 }
-
